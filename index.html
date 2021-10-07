@@ -73,7 +73,11 @@
       </a-marker>
       
       		<!-- handle kanji marker -->
-		<a-marker preset='kanji'>
+	<a-marker preset='kanji'
+	raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        id="markerB">
         <a-entity
           id="bowser-model2"
           gltf-model="#bowser"
